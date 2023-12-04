@@ -6,6 +6,19 @@ public class Aluno {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Aluno(String nome) {
+		// TODO Auto-generated constructor stub
+		nome = this.nome;
+		
+	}
+	
+	public Aluno(String nome, int idade) {
+		// TODO Auto-generated constructor stub
+		nome = this.nome;
+		idade = this.idade;
+	}
+	
+	
 	private String nome;
 	private int idade;
 	private String dataNascimento;
@@ -16,6 +29,8 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
+	
+	
 	public String getNome() {
 		return nome;
 	}
