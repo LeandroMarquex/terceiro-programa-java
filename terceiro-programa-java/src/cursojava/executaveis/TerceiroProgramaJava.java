@@ -20,6 +20,10 @@ public class TerceiroProgramaJava {
 		aluno1.setDataMatricula("10/10/20221");
 		aluno1.setSerieMatriculado("5 Seria");
 		aluno1.setNomeEscola("Escola Joao XXIII");
+		aluno1.setNota1(90);
+		aluno1.setNota2(90);
+		aluno1.setNota3(90);
+		aluno1.setNota4(90);
 		
 		System.out.println("Nome é = " + aluno1.getNome());
 		System.out.println("Idade é = " + aluno1.getIdade());
@@ -33,6 +37,11 @@ public class TerceiroProgramaJava {
 		System.out.println("Escola é = " + aluno1.getNomeEscola());
 
 		System.out.println("******************************************");
+		
+		System.out.println("Minha média é = " + aluno1.getMediaNOta());
+		System.out.println("Aluno esta  = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Aluno esta  = " + aluno1.getAlunoAprovado2());
+		
 		System.out.println("******************************************");
 
 		aluno2.setNome("Leandro Marques aluno2");
