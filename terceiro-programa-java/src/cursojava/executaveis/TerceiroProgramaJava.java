@@ -1,5 +1,7 @@
 package cursojava.executaveis;
 
+import javax.swing.JOptionPane;
+
 import cursojava.classes.Aluno;
 
 public class TerceiroProgramaJava {
@@ -7,23 +9,40 @@ public class TerceiroProgramaJava {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		String nome = JOptionPane.showInputDialog("Qual o nome do aluno");
+		String idade = JOptionPane.showInputDialog("Qual a idade");
+		String dataNascimento = JOptionPane.showInputDialog("Data de nascimeto");
+		String rg = JOptionPane.showInputDialog("Registro Geral");
+		String cpf = JOptionPane.showInputDialog("Qual o CPF");
+		String mae = JOptionPane.showInputDialog("Nome da mãe");
+		String pai = JOptionPane.showInputDialog("Nome do Pai");
+		String dataMatricula = JOptionPane.showInputDialog("Data da Matricula");
+		String serie = JOptionPane.showInputDialog("Qual a serie");
+		String nomeEscola = JOptionPane.showInputDialog("Qual o nome da Escola");
+		String nota1 = JOptionPane.showInputDialog("Nota 1");
+		String nota2 = JOptionPane.showInputDialog("Nota 2");
+		String nota3 = JOptionPane.showInputDialog("Nota 3");
+		String nota4 = JOptionPane.showInputDialog("Nota 4");
+		
+		
 		Aluno aluno1 = new Aluno();
 		Aluno aluno2 = new Aluno();
 		
-		aluno1.setNome("Leandro Marques");
-		aluno1.setIdade(41);
-		aluno1.setDataNascimento("18/07/1982");
-		aluno1.setRegistroGeral("7 748.849-9");
-		aluno1.setNumeroCpf("039.791.379-61");
-		aluno1.setNomeMae("Marlene Marques");
-		aluno1.setNomePai("Antonio Marques");
-		aluno1.setDataMatricula("10/10/20221");
-		aluno1.setSerieMatriculado("5 Seria");
-		aluno1.setNomeEscola("Escola Joao XXIII");
-		aluno1.setNota1(90);
-		aluno1.setNota2(90);
-		aluno1.setNota3(90);
-		aluno1.setNota4(90);
+		aluno1.setNome(nome);
+		aluno1.setIdade(Integer.valueOf(idade));
+		aluno1.setDataNascimento(dataNascimento);
+		aluno1.setRegistroGeral(rg);
+		aluno1.setNumeroCpf(cpf);
+		aluno1.setNomeMae(mae);
+		aluno1.setNomePai(pai);
+		aluno1.setDataMatricula(dataMatricula);
+		aluno1.setSerieMatriculado(serie);
+		aluno1.setNomeEscola(nomeEscola);
+		aluno1.setNota1(Double.parseDouble(nota1));
+		aluno1.setNota1(Double.parseDouble(nota2));
+		aluno1.setNota1(Double.parseDouble(nota3));
+		aluno1.setNota1(Double.parseDouble(nota4));
+		
 		
 		System.out.println("Nome é = " + aluno1.getNome());
 		System.out.println("Idade é = " + aluno1.getIdade());
