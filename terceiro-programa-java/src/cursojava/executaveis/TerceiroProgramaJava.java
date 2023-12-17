@@ -19,9 +19,17 @@ public class TerceiroProgramaJava {
 		String dataMatricula = JOptionPane.showInputDialog("Data da Matricula");
 		String serie = JOptionPane.showInputDialog("Qual a serie");
 		String nomeEscola = JOptionPane.showInputDialog("Qual o nome da Escola");
+		
+		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1");
 		String nota1 = JOptionPane.showInputDialog("Nota 1");
+		
+		String disciplina2 = JOptionPane.showInputDialog("Disciplina 2");
 		String nota2 = JOptionPane.showInputDialog("Nota 2");
+		
+		String disciplina3 = JOptionPane.showInputDialog("Disciplina 3");
 		String nota3 = JOptionPane.showInputDialog("Nota 3");
+		
+		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4");
 		String nota4 = JOptionPane.showInputDialog("Nota 4");
 		
 		
@@ -38,10 +46,17 @@ public class TerceiroProgramaJava {
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setSerieMatriculado(serie);
 		aluno1.setNomeEscola(nomeEscola);
+		
 		aluno1.setNota1(Double.parseDouble(nota1));
 		aluno1.setNota1(Double.parseDouble(nota2));
 		aluno1.setNota1(Double.parseDouble(nota3));
 		aluno1.setNota1(Double.parseDouble(nota4));
+		
+		aluno1.setDisciplina1(disciplina1);
+		aluno1.setDisciplina2(disciplina2);
+		aluno1.setDisciplina3(disciplina3);
+		aluno1.setDisciplina4(disciplina4);
+		
 		
 		
 		System.out.println("Nome é = " + aluno1.getNome());
@@ -56,6 +71,11 @@ public class TerceiroProgramaJava {
 		System.out.println("Escola é = " + aluno1.getNomeEscola());
 
 		System.out.println("******************************************");
+		
+		System.out.println(aluno1.toString());
+
+		System.out.println("******************************************");
+
 		
 		System.out.println("Minha média é = " + aluno1.getMediaNOta());
 		System.out.println("Aluno esta  = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
@@ -84,6 +104,16 @@ public class TerceiroProgramaJava {
 		System.out.println("Matricula é = " + aluno2.getDataMatricula());
 		System.out.println("Serie é = " + aluno2.getSerieMatriculado());
 		System.out.println("Escola é = " + aluno2.getNomeEscola());
+		
+		aluno1.setNome("Leandro");
+		aluno2.setNome("Leandros");
+		
+		if (aluno1.equals(aluno2)) {
+			
+			System.out.println("Alunos são iguais");
+		} else {
+			System.out.println("Alunos não são iguais");
+		}
 
 	}
 
