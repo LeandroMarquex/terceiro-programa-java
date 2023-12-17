@@ -1,3 +1,4 @@
+
 package cursojava.executaveis;
 
 import javax.swing.JOptionPane;
@@ -8,6 +9,7 @@ public class TerceiroProgramaJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// TESTE NOTEBLACK
 		
 		String nome = JOptionPane.showInputDialog("Qual o nome do aluno");
 		String idade = JOptionPane.showInputDialog("Qual a idade");
