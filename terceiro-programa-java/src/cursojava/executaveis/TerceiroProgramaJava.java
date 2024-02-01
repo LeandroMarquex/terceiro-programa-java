@@ -11,6 +11,7 @@ public class TerceiroProgramaJava {
 		// TODO Auto-generated method stub
 		// TESTE NOTEBLACK
 		// TESTE PCGAMER
+		// TESTE 31/01/2024
 		
 		String nome = JOptionPane.showInputDialog("Qual o nome do aluno");
 		String idade = JOptionPane.showInputDialog("Qual a idade");
