@@ -12,6 +12,7 @@ public class TerceiroProgramaJava {
 		// TESTE NOTEBLACK
 		// TESTE PCGAMER
 		// TESTE 31/01/2024
+		// teste 31/01/2024 pcgamer
 		
 		String nome = JOptionPane.showInputDialog("Qual o nome do aluno");
 		String idade = JOptionPane.showInputDialog("Qual a idade");
